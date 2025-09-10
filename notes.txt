@@ -1,0 +1,10 @@
+1.StrOutputParser() is a simple but important utility class in LangChain. Here's what it does:
+Main Purpose
+It converts the LLM's response object into a plain string.
+Why It's Needed
+When an LLM (like ChatOpenAI) generates a response, it doesn't return a simple string. 
+Instead, it returns a structured message object that looks like this:
+
+
+2. RecursiveTextSplitter tries different delimiters- > page break- > paragpraph -> sentence-> word ->character starts with the page (the largest delimiters 
+can vary depending on the content)
